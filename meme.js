@@ -1,6 +1,6 @@
-var scanInterval = setInterval(vascan, 500);
+var fInterval = setInterval(f, 500);
 
-function vascan()
+function f()
 {
     let popout = document.getElementsByClassName("avatar-2Vndt_ wrapper-1VLyxH");
     let banner = document.getElementsByClassName("avatar-3QF_VA wrapper-1VLyxH");
@@ -15,12 +15,12 @@ function vascan()
 
     let color = "#FFFFFF";
 
-    if (sp.indexOf("Невидимый") || sb.indexOf("Невидимый"))
+    if (sp.indexOf(status))
         color = "#000000";
 
-    let connectSpotify1 = document.getElementsByClassName("flex-2S1XBF flex-3BkGQD horizontal-112GEH horizontal-1Piu5- flex-3BkGQD directionRow-2Iu2A9 justifyStart-2Mwniq alignStretch-Uwowzr noWrap-hBpHBz buttonsWrapper-2ARRp1 horizontal-30-DXt").length;
-    let connectSpotify2 = document.getElementsByClassName("flex-2S1XBF flex-3BkGQD horizontal-112GEH horizontal-1Piu5- flex-3BkGQD directionRow-2Iu2A9 justifyStart-2Mwniq alignEnd-2awoY_ noWrap-hBpHBz actionsProfile-31n1ca buttonsWrapper-2ARRp1 horizontal-30-DXt").length;
-    if (connectSpotify1 == 1 || connectSpotify2 == 1)
+    let connect1 = document.getElementsByClassName("flex-2S1XBF flex-3BkGQD horizontal-112GEH horizontal-1Piu5- flex-3BkGQD directionRow-2Iu2A9 justifyStart-2Mwniq alignStretch-Uwowzr noWrap-hBpHBz buttonsWrapper-2ARRp1 horizontal-30-DXt").length;
+    let connect2 = document.getElementsByClassName("flex-2S1XBF flex-3BkGQD horizontal-112GEH horizontal-1Piu5- flex-3BkGQD directionRow-2Iu2A9 justifyStart-2Mwniq alignEnd-2awoY_ noWrap-hBpHBz actionsProfile-31n1ca buttonsWrapper-2ARRp1 horizontal-30-DXt").length;
+    if (connect1 == 1 || connect2 == 1)
         color = "#00FFFF";
 
     let backdrop = document.getElementsByClassName("backdrop-2ByYRN withLayer-2VVmpp");
