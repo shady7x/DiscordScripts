@@ -3,7 +3,7 @@ var fInterval = setInterval(f, 500);
 function f()
 {
 	let color = "#FFFFFF";
-    let wrapper = document.getElementsByClassName("wrapper-1VLyxH");
+	let wrapper = document.getElementsByClassName("wrapper-1VLyxH");
 	
 	if (wrapper.length > 0 && wrapper[wrapper.length - 1].style.width != "32px")
 	{
