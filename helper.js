@@ -147,7 +147,7 @@ function create_search_button(question, type)
 	let gy_search = document.createElement("button");
 	gy_search.textContent = "[SEARCH]";
 	gy_search.onclick = function() {
-		if (type == "image") question = encodeURI(question);
+	if (type == "image") question = encodeURI(question);
 		win_google = window.open((type != "image" ? "https://www.google.com/search?q=" : "https://www.google.com/searchbyimage?image_url=") + question, 'popUpGoogle', 'height=500, width=700, left=-5, top=0');
 		win_yandex = window.open((type != "image" ? "https://www.yandex.ru/search/?text=" : "https://yandex.ru/images/search?rpt=imageview&url=") + question, 'popUpYandex', 'height=500, width=700, left=700, top=0');
 	};
