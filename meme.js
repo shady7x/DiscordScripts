@@ -3,7 +3,7 @@ var fInterval = setInterval(f, 500);
 function f()
 {
 	let color = "#FFFFFF";
-	let wrapper = document.getElementsByClassName("wrapper-1VLyxH");
+	let wrapper = document.getElementsByClassName("wrapper-3Un6-K");
 	
 	if (wrapper.length > 0 && wrapper[wrapper.length - 1].style.width != "32px")
 	{
@@ -20,5 +20,5 @@ function f()
 		if (backdrop.length == 1) backdrop[0].setAttribute("style", "");
 	}
 	
-	document.getElementsByClassName("scroller-3X7KbA none-2-_0dP scrollerBase-_bVAAt")[0].style.backgroundColor = color;
+	document.getElementsByClassName("scroller-3X7KbA none-1rXy4P scrollerBase-1Pkza4")[0].style.backgroundColor = color;
 }
